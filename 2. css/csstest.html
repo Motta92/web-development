@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+ <title>Hello world</title>
+ <meta charset="utf-8" />
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <style type="text/css">
+ 	p{
+ 		color: white;
+ 		padding: 0;
+ 		margin: 0;
+ 	}
+
+ 	.underline{
+ 		text-decoration: underline;
+ 	}
+
+ 	div{
+ 		width: 100px;
+ 		height: 100px;
+ 		float: left;
+ 		margin: 20px;
+ 		padding: 20px;
+ 	}
+ 	.redbox{
+ 		background-color: #610B0B;
+ 		border: 10px black ridge; // dotted dashed solid inset ridge
+
+ 		//z-index: 1;
+ 		//margin: 50px 100px 30px 10px;
+ 		//margin-left: 150px;
+ 		//position: relative; relative absolute fixed static
+ 		//float: left;
+ 		//padding: 10px;	
+ 	}
+
+ 	.bluebox{
+ 		background-color: #0B0B3B;
+ 		border-style: ridge solid dotted dashed;
+ 		border-width: 10px 5px 3px 1px;
+ 		border-color: green yellow blue black;
+ 	}
+
+ 	.greenbox{
+ 		background-color: #173B0B;
+ 		border-radius: 70px;
+	}
+
+ </style>
+</head>
+<body>
+	<div class="redbox">
+		<!-- Class is meant to be used by many elements -->
+		<!-- Id is meant to be unique, to be used only once -->
+		<p>Red box</p>
+	</div>
+
+	<div class="bluebox">
+		<p>Blue box</p>
+	</div>
+
+	<div class="greenbox">
+		<p><span class="underline">Green</span> Box</p>
+	</div>
+
+</body>
+</html>
+
+<!-- USEFUL INFORMATION  -->
+<!-- jsbin pretty usefl -->

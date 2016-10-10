@@ -1,0 +1,375 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>HTML Basics</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />   
+</head>
+
+<body>
+<div>
+    <center><h2>HTML Basics</h2></center>
+    <p><strong>Table of Contents:</strong>
+    <br/><a href="#structure">Structure of the website</a>
+    <br/><a href="#doctype">Doctype</a>
+    <br/><a href="#title">Title Tag</a>
+    <br/><a href="#header">Header Tags</a>
+    <br/><a href="#paragraph">Paragraph and break tags</a>
+    <br/><a href="#horizontal">Horizontal lines</a>
+    <br/><a href="#bold">Bold, italics, underline, strikethrough</a>
+    <br/><a href="#comments">Comments</a>
+    <br/><a href="#lists">Ordered and unordered lists</a>
+    <br/><a href="#images">Images</a>
+    <br/><a href="#forms">Forms</a>
+    <br/><a href="#links">Links</a>
+    <br/><a href="#tables">Tables</a>
+    <br/><a href="#entities">Entities</a>
+    <br/><a href="#iframes">iFrames</a></p>
+    
+    
+    
+    <p>HTML stands for <strong>H</strong>yper <strong>T</strong>ext                         <strong>M</strong>arkup <strong>L</strong>anguage and is used to create websites         (like this one!). It uses tags to add content to the website. For example, an HTML     document can look like this:<br/></p>
+    <!--Introduction-->
+    
+    
+    <hr/>
+    <p>
+        &lt;!doctype html><br/>
+        &lt;html><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp&lt;head><br/><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&lt;title>Hello World&lt;/title><br/><br/>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp&lt;/head><br/><br/>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;body><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p>Hello world!&lt;\p><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/body><br/><br/>
+        &lt;/html>
+    </p>
+    
+    <!--Test Code-->
+    
+    
+    <hr/>
+    
+    <a name="structure"/>
+    
+    <h3>Structure</h3>
+    <p>If you look at the structure of the code you can see &lt;html> and &lt;/html> at the beginning and at the end. These are known as tags. &lt;<em>HTML-tag</em>> is called an opening tag and &lt;<em>/HTML-tag</em>> is known as the closing tag. You will see several tags that do not have closing tags; they are called self-closing tags. For example: <br/> &nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="link" /><br/>This tag inserts an image to the document. There is no opening or closing tags; it is self-closing. Usually, self-closing tags end with a />.</p>
+    
+    <hr/>
+    
+    <!--Tags-->
+    <a name="doctype"/>
+    <h3>Doctype</h3>
+    <p>Include &lt;!doctype html> at the top of every html document. It is to let the browser know that it is an html document.</p>
+    
+    <hr/>
+    <a name="title"/>
+    <h3>Title Tag</h3>
+    <p>The &lt;title>Hello World&lt;/title> tag will display the surrounded text on the tab of the website.</p>
+    <img src="Images/title.png"/>
+    
+    <hr/>
+    
+    <!--Title Tag-->
+    
+    <a name="header"/>
+    <h3>Header Tags</h3>
+    <p>There are six header tags available to display bolded text. It ranges from largest to smallest. Any header tags after six will be the same size as regular text.</p>
+    <p>For the following tags:<br/>
+    &lt;h1>h1&lt;/h1><br/>
+    &lt;h2>h2&lt;/h2><br/>
+    &lt;h3>h3&lt;/h3><br/>
+    &lt;h4>h4&lt;/h4><br/>
+    &lt;h5>h5&lt;/h5><br/>
+    &lt;h6>h6&lt;/h6><br/>
+    &lt;h7>h7&lt;/h7><br/>
+    The text looks like:</p>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+    <h7>h7</h7>
+    
+    <hr/>
+    
+    <!--Header Tags-->
+    <a name="paragraph"/>
+    <h3>Paragraph and break tags</h3>
+    <p>To display a block of text, we use the paragraph tag. &lt;p>text goes here&lt;/p> will display the surrounded text. Something you will notice is that html ignores whitespace. What this means is that adding spaces inbetween words will not change the display. <br/>For example, &lt;p>text&nbsp;&nbsp;&nbsp;goes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;here&lt;/p> will look the same as &lt;p>text goes here&lt;/p>. Actually there is a way, but we will learn that when we get to (add link here)entities.
+    <br/>However, if you want to skip a line, we use the break tag: &lt;br/>. Notice that the break tag is a self-closing tag. 
+    <br/>&lt;p>text goes &lt;br/>here&lt;/p> will display:</p>
+    <p>text goes<br/>here</p>
+    
+    <!--P and break tags-->
+    
+    <hr/>
+    <a name="horizontal"/>
+    <h3>Horizontal Line</h3>
+    <p>You probably notice the horizontal lines throughout the page. To insert one, use the self-closing tag: &lt;hr/>.</p>
+    
+    <!--Horizontal Line-->
+    
+    <hr/>
+    <a name="bold"/>
+    <h3>Bold, Italic, Underline, Strikethrough</h3>
+    <p>Surround text between &lt;strong>&lt;/strong> tags to bold the text. Surround between &lt;em>&lt;/em> (emphasize) tags to italicize. Surround between &lt;u>&lt;/u> tags to underline. Surround between &lt;strike>&lt;/strike> tags for strikethrough. <br/> For example, the following code: 
+    <br/>&lt;strong>This is a bold piece of text. &lt;/strong>This word will be in &lt;em>italics&lt;/em>. I want this &lt;u>word&lt;/u> to be underlined. &lt;strike>This line is wrong.&lt;/strike> will display:</p>
+    <p><strong>This is a bold piece of text. </strong>This word will be in <em>italics</em>. I want this <u>word</u> to be underlined. <strike>This line is wrong.</strike></p>
+    
+    <!--Strong, Em, U, Strike -->
+    
+    <hr/>
+    <a name="comments"/>
+    <h3>Comments</h3>
+    <p>Usually, you would like to leave notes throughout your html document. They are useful for recalling topics, what the code does, etc.
+    <br/>To insert a comment: &lt;!--Comment-->. You will know if you typed it right if it greys out or if something similar occurs.</p>
+    
+    <!--Comments-->
+    
+    <hr/>
+    <a name="lists"/>
+    <h3>Ordered Lists and Unordered Lists</h3>
+    <p>If you want to simply list several items you have a choice between an ordered       list and an unordered list. An ordered list has a structure that tells you what is     first, second, etc. <br/>The syntax for an ordered list is the tag              &lt;ol>&lt;/ol> and the items will be between the tags. To insert an item, you use   the tag &lt;li>&lt;/li>.For example:<br/><br/>
+    &lt;p>&lt;strong>Ordered List&lt;/strong>&lt;/p><br/>
+    &lt;ol> <br/><!--ordered lists (numbering)-->
+        &nbsp;&nbsp;&nbsp;&lt;li>First&lt;/li><br/>
+        &nbsp;&nbsp;&nbsp;&lt;li>Second&lt;/li><br/>
+        &nbsp;&nbsp;&nbsp;&lt;li>Third&lt;/li><br/>
+    &lt;/ol><br/><br/>
+    Will produce an ordered list: <br/></p>
+    
+    <p><strong>Ordered List</strong></p>
+    <ol> <!--ordered lists (numbering)-->
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+    </ol>
+    
+    <p>For an unordered list, there is no structure; we do not know what is first, second, etc. The syntax is very similiar to that of an ordered list, but we use the tag &lt;ul>&lt;/ul>.
+    <br/>For example: <br/>  
+    &lt;p>&lt;strong>My Favorite Foods&lt;/strong>&lt;/p><br/>
+    &lt;ul> <br/><!--unordered list (bullet points)-->
+    &nbsp;&nbsp;&nbsp;&lt;li>Burgers&lt;/li><br/>
+    &nbsp;&nbsp;&nbsp;&lt;li>Chocolate&lt;/li><br/>
+    &nbsp;&nbsp;&nbsp;&lt;li>Sushi&lt;/li><br/>
+    &lt;/ul><br/><br/>
+    Will produce:<br/></p>
+
+    <p><strong>My Favorite Foods</strong></p>
+    <ul> <!--unordered list (bullet points)-->
+        <li>Burgers</li>
+        <li>Chocolate</li>
+        <li>Sushi</li>
+    </ul>
+    
+    <hr/>
+    <a name="images"/>
+    <h3>Images</h3>
+    <p>To insert a downloaded image, first make sure the image is in the same directory as your html document. The syntax to insert an image is: &lt;img src="image-name.file-extension (jpeg, png, etc)/>. Note that it is a self-closing tag. 
+    <br/>For example, using an image I got off of Google: &lt;img src="google-newyears.gif/> will display:</p>
+    <img src="Images/google-newyears.gif"/>
+    <p>You might notice that the image is huge. To change the width/height of it, add the width and/or height parameter(s).
+    <br/>For example:
+    <br/>&lt;img src="google-newyears.gif" width="100"/> will display:</p>
+    <img src="Images/google-newyears.gif" width="100"/>
+    <p>You will notice again that if you only put one parameter, the image will proportionately change size. Obviously, if you add both parameters, the image will change to those dimensions.
+    <br/>You can also add images via an url.
+    <br/>For example, using an image found on Wikipedia:
+    <br/>&lt;img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/1_epcot_illuminations_2010.jpg/1024px-1_epcot_illuminations_2010.jpg" width="400"/></p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/1_epcot_illuminations_2010.jpg/1024px-1_epcot_illuminations_2010.jpg" width="400"/>
+    
+    <hr/>
+    <a name="forms"/>
+    <h3>Forms</h3>
+    <p>You have definitely seen forms on websites before. Examples are typing your username or password, writing a paragraph in a textbox, selecting options from a list, etc. To insert a form, the syntax is: &lt;form>&lt;/form>. Every type of form will be inbetween the form tags.
+    <br/>The first type of form we will look at will be the one-line textbox.
+    <br/>The syntax is: &lt;input type="text"/>. </p>
+    <input type="text"/>
+    <p>If you want the box to have some text initially, we have to use the placeholder parameter. If we type &lt;input type="text" placeholder="type here..."/> it will get us: <br/></p>
+    <input type="text" placeholder="type here..."/>
+    <p>We can change the type of input it is by changing the type. If we change the type to password, the text will be censored. If we change the type to email, the text must be in email format.</p>
+    <input type="password" placeholder="password"/><br/><br/>
+    <input type="email" placeholder="email"/>
+    
+    <p>To create a textbox, we change the input to textarea. For example:<br/>
+    &lt;textarea>My content goes here&lt/textarea> will display:</p>
+    <textarea name="textarea">My content goes here</textarea>
+    
+    <p>To create a drop-down form, we change the input to select. Between the select tags will be the options. For example:<br/>
+    &lt;select><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;option>Select an option...&lt;/option><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;option>1&lt;/option><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;option>2&lt;/option><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;option>3&lt;/option><br/>
+    &lt;/select><br/><br/>
+    Will produce:</p>
+    
+    <select>
+        <option>Select an option...</option> 
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+    
+    <p>To create a form that has several options but the user may only pick one, change the type to radio. For example: <br/>
+    &lt;input type="radio" name="color" value="red"/> Red<br/>
+    &lt;input type="radio" name="color" value="green"/> Green<br/>
+    Will give us: </p>
+    <input type="radio" name="color" value="red"/> Red
+    <input type="radio" name="color" value="green"/> Green
+    
+    <p>To create a checkbox form, we change the type to checkbox. For example:
+    <br/>&lt;input type="checkbox"/> Dog<br/> 
+        &lt;input type="checkbox"/> Cat<br/>
+        &lt;input type="checkbox"/> Fish<br/><br/>
+    This will give us:<br/>
+    </p>
+        <input type="checkbox"/> Dog 
+        <input type="checkbox"/> Cat
+        <input type="checkbox"/> Fish
+    
+    <p>Now you are wondering how to submit the information in the forms. You create another input tag and of type submit. For example:<br/>
+    &lt;input type="submit"/> </p>
+    <input type="submit"/> 
+    <p>If you want the button to say something different, we have to use the value parameter. For example:<br/>
+    &lt;input type="submit" value = "Click me!"/><br/>
+    Which will give us:</p>
+    <input type="submit" value = "Click me!"/>
+    
+    <p>So what happens when we submit the data? If you look at your url, something very subtle changed.</p>
+    <img src="Images/form.png"/>
+    <p>If you look closely at the end of the url, a ? now appears. Here is where we can find out what data were submitted. However, we see that its blank afterwards. That is because we are missing the <strong>name</strong> and possibly the <strong>value</strong> parameter(s). With these, we can see what data were submitted and for which forms.
+    <br/>For example, using all the forms we learned:<br/><br/>
+    
+    &lt;form><br/><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="email" placeholder="type here..." name="email"/><br/><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;br/>&lt;br/><br/><br/>
+            
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;textarea name="textarea">My content goes here&lt;/textarea><br/><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;br/>&lt;br/><br/><br/>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;select name="options"><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option>Select an option...</option> <br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="1">1&lt;/option><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="2">2&lt;/option><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="3">3&lt;/option><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/select><br/><br/>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;br/>&lt;br/><br/><br/>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="radio" name="color" value="red"/> Red<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="radio" name="color" value="green"/> Green<br/><br/>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;br/>&lt;br/><br/><br/>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" name="dog" value="1"/> Dog <br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" name="cat" value="2"/> Cat<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" name="fish" value="3"/> Fish<br/><br/>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;br/>&lt;br/><br/><br/>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="submit" value = "Click me!"/> <br/><br/>
+    &lt;/form><br/><br/>
+        
+    If we submit some data:</p>
+    
+    <img src="Images/forminput.png"/>
+    
+    <p>And submitted them, let us look at the url now:</p>
+    <img src="Images/formurl.png"/>
+    
+    <p>To the right of the ?, we have: email=example%40email.com. email is the value of the name parameter used in the email tag. example%40email.com is the email that we entered! The %40 is the url encoding of the @ symbol. For the following names, we can see: textarea=This+is+a+test+sentence., options=2, color=red, dog=1&cat=2, which is the rest of the data that we submitted. <br/>Unfortunately, we cannot really use any of the data submitted until we get to Javascript or PHP.
+    </p>
+    <!--Forms-->
+    
+    <hr/>
+    <a name="links"/>
+    <h3>Links</h3>
+    <p>If we want to insert a link to another website or html page, we use the &lt;a href="link">Hyperlink Text&lt;/a>.
+    <br/>For example, if we want to link to Google: <br/>
+    &lt;a href="http://google.com">Link to Google&lt;a/></p>
+    <a href="http://google.com">Link to Google</a>
+    <p>Note that you need the http://. If you want to create a link to another html document, replace the link with the name of the html document with the extension.
+    <br/>Something else useful with links is helping the user navigate the webpage. An example is the table of contents at the top of this page. We have to have an anchor tag. For example, let us say we want a link to get back to the top of the page. Towards the top of the page, we leave an anchor tag:<br/>
+    &lt;a name="top"/>
+    <br/>Note that it is a self-closing tag. Now you leave the link somewhere:<br/>
+    &lt;a href="#top">Link to Top&lt;/a><br/>
+    Note the # before the name!</p>
+    
+    <!--Links-->
+    
+    <hr/>
+    <a name="tables"/>
+    <h3>Tables</h3>
+    <p>Tables are used to insert several rows and columns of data. To create a table, we use the &lt;table>&lt;/table> tags. Now we want to insert a row. To do this we use the &lt;tr>&lt;/tr> tags, where tr stands for tr. Finally, for each row we want columns of data. We have two options here: table headers, which makes the text bold, or regular table data. We use &lt;th>&lt;/th> for the table headers and &lt;td>&lt;/td> for the table data.
+    <br/>For example, the complete code for a table:<br/><br/>
+    
+    &lt;table><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr> &nbsp;&nbsp;&nbsp;&nbsp;&lt;!--tr represents a table row--><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th>Names&lt;/th>   &nbsp;&nbsp;&nbsp;&nbsp;&lt;!--th is a table header (bolder)--> <br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th>Age&lt;/th><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th>Gender&lt;/th><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td>Calvin&lt;/td>  &nbsp;&nbsp;&nbsp;&nbsp;&lt;!--td is a table column--><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td>19&lt;/td><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td>Male&lt;/td><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td>Iris&lt;/td><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td>19&lt;/td><br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td>Female&lt;/td><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr><br/>
+    &lt;/table><br/><br/>
+    Which will give us:<br/></p>
+    <table>
+        <tr> <!--tr represents a table row-->
+            <th>Names</th>   <!--th is a table header (bolder)-->
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
+        <tr>
+            <td>Calvin</td>  <!--td is a table column-->
+            <td>19</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>Iris</td>
+            <td>19</td>
+            <td>Female</td>  <!--note: no structure bound by table (can have two columns or 4 when 3 th are created)-->
+        </tr>
+    </table>
+    <p>Note, that there is no structure for a table! One of those rows can have two or four columns even though three table headers are created.</p>
+    <!--Tables-->
+    
+    <a name="entities"/>
+    <h3>Entities</h3>
+    <p>What if you want to print out tags like &lt;h1>&lt;/h1> or &lt;table>&lt;/table> instead of using them for their html purposes? If you want to display a certain character, you have to use entities. For example, if we want to display a link &lt;a href="http://google.com">Link&lt;/a> we have to replace the < with:<br/></p>
+    <img src="Images/entities.png"/>
+    <p>To read about other entities: <br/></p>
+    <a href="http://www.w3schools.com/html/html_entities.asp">Entities:</a><br/>
+    <iframe with="1400" height="500" src="http://www.w3schools.com/html/html_entities.asp"></iframe>
+    <iframe align="left" width="560" height="315" src="https://www.youtube.com/embed/K_wt4bcM9sM" frameborder="0" allowfullscreen></iframe>
+    <!--Entities-->
+    
+    <hr/>
+    <a name="iframes"/>
+    <h3>iFrames</h3>
+    <p>If you want to display another webpage or a video on your page, you have to use an iframe. You can also display another html page. The syntax is:<br/>
+    &lt;iframe src="link">&lt;/iframe><br/>
+    For example, if you want to display a Youtube video on your page: <br/>
+    &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/t2ByLmLnYJ8" frameborder="0" allowfullscreen>&lt;/iframe><br/>
+    Which will display: <br/><br/></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/t2ByLmLnYJ8" frameborder="0" allowfullscreen></iframe>
+    <p>Note that you can change the width and height of the frame.</p>
+    
+</div>
+</body>
+</html>
