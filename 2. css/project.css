@@ -94,11 +94,8 @@ body{
     margin: 0;
     padding: 0;
     padding-top: 48px;
-    padding-left: 10px;
     float: left;
 }
-
-
 
 #newsheader{
     font-size: 3em;
@@ -120,3 +117,104 @@ body{
 #rss img{
     height: 16px;
 }
+
+#topicmenu{
+    
+}
+
+#topicmenu ul{
+    background-color: #3E0C0D; 
+    padding: 5px 0 0 5px;
+    margin: 0;
+    height: 20px;
+}
+
+#topicmenu li{
+    list-style: none;
+    font-size: 0.8em;
+    padding: 0 10px 0 10px;
+    border-right: 1px solid #990000;
+    float: left;
+}
+
+.selected{
+    background-color:  #EDEDED;
+    color: #666666;
+    height: 20px;
+    position: relative;
+    top: -4px;
+    padding-top: 4px !important;
+}
+
+/* Main Content CSS */
+#content{
+    width: 100%; 
+    color: #535353;
+    font-size: 0.75em;
+}
+
+.date{
+    font-weight: bold;
+}
+
+h1{
+    color: #1F4F82;
+    font-size: 2.5em;
+}
+
+.headlightImage{
+    float: left;
+}
+
+.newsItem{
+    float: left;
+    position: relative;
+    left: 10px;
+/*    top: -15px;*/
+    width: 230px;
+    font-size: 1.1em;
+}
+
+.newsItem p{
+    margin: 0;
+    padding: 0; 
+    vertical-align: middle;
+}
+
+.newsItem a{
+    text-decoration: none;
+    
+}
+
+.newsItem a:hover{
+    text-decoration: underline;
+}
+
+.video{
+    background-image:url("img/rss.PNG");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
